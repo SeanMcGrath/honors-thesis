@@ -1,0 +1,29 @@
+%!TEX root = ../dissertation.tex
+\chapter{Online Resources}
+
+\newthought{In the interest of} promoting openness and cooperation in the scientific community, all data produced during this work has been made publicly available online. Also included are various scripts and other bits of technical tooling used to facilitate the gathering and analysis of spectral data.
+
+\section{Main Repository}
+
+The majority of the published data reside in a Git repository hosted at the following URL:
+
+\bigskip
+\noindent\href{https://github.com/SeanMcGrath/McGrath396Data}{https://github.com/SeanMcGrath/McGrath396Data}.
+
+\bigskip
+\noindent This repository includes the raw output of all the Gaussian simulations, numerous utility scripts, experimental reference spectra, all the figures used in this thesis, and more. It is documented with an accompanying README file.
+
+\section{Peak Shifting Data}
+
+A key piece of data not included in the above repository is the raw data used to construct Tables \ref{tbl:assignments} and \ref{tbl:basis_sets}. This is kept in the form of a Google spreadsheet publicly available at the following URL:
+
+\noindent\href{https://drive.google.com/open?id=1CNW38XCJoEd2ucux0X7hFKjDLFzx_5ma0cOOE_bjVKc}{https://drive.google.com/open?id=1CNW38XCJoEd2ucux0X7hFKjDLFzx\_5ma0cOOE\_bjVKc}
+
+\section{gParse}
+
+The analysis techniques used in this paper require the simultaneous manipulation and recombination of dozens of sets of Gaussian output. To make this process as simple and robust as possible, a Python library named gParse has been created. This library provides several simple classes that consume Gaussian output files and convert the structural and spatial data therein into powerful data structures. Along with these data structures come many useful methods for carrying out the types of analysis presented in this thesis. gParse is a key part of nearly all the analysis scripts contained in the main repository.
+
+The complete, installable source for gParse is hosted in its own Git repository, available here:
+
+\bigskip
+\href{https://github.com/SeanMcGrath/gparse}{https://github.com/SeanMcGrath/gparse}
